@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script>
   $(function() {
-    //$( "#datepicker" ).datepicker();
+    $( "#datepicker" ).datepicker();
   });
   </script>
  <!-- jQuery CDN link....  
@@ -83,6 +83,13 @@
 					<li>
 						<label>Enter Zip Code</label>
 						<input type="number" required placeholder="90210" pattern="^\d{5}(?:[-\s]\d{4})?$" />
+					</li>
+					<li>
+						<label>Please Pick a date</label>
+						<input  type="date" id="datepicker" name="date"/>
+					</li>
+					<li>
+						
 					</li>
 				</ul>
 				<input type="submit" name="submit" value="Submit" />
